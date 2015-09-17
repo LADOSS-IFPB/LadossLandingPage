@@ -1,3 +1,4 @@
+import java.io.IOException;
 import java.util.Properties;
 
 import javax.mail.Message;
@@ -26,7 +27,7 @@ public class MailServlet extends HttpServlet{
 		System.out.println("Mail Server Properties have been setup successfully..");
  
 		// Step2
-		System.out.println("\n\n 2nd ===> get Mail Session..");
+		System.out.println("\n\n get Mail Session..");
 		Session getMailSession = Session.getDefaultInstance(mailServerProperties, null);
 		MimeMessage generateMailMessage = new MimeMessage(getMailSession);
 		try {
@@ -42,7 +43,7 @@ public class MailServlet extends HttpServlet{
 			System.out.println("Mail Session has been created successfully..");
 	 
 			// Step3
-			System.out.println("\n\n 3rd ===> Get Session and Send mail");
+			System.out.println("\n\nGet Session and Send mail");
 			Transport transport = getMailSession.getTransport("smtp");
 	 
 			// Enter your correct gmail UserID and Password
@@ -50,8 +51,13 @@ public class MailServlet extends HttpServlet{
 			transport.connect("smtp.gmail.com", "joaodedeusito@gmail.com", "hyogbrzpxwbfajke");
 			transport.sendMessage(generateMailMessage, generateMailMessage.getAllRecipients());
 			transport.close();
-		} catch (MessagingException e) {
+			response.sendRedirect("index.html");
+			//TODO add success message.
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
 			e.printStackTrace();
+		} catch (MessagingException e) {
+			System.err.println("Error while sending response.");
 		}
 	}
 }
