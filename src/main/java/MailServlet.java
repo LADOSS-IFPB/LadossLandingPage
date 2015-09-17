@@ -19,7 +19,7 @@ public class MailServlet extends HttpServlet{
 
 	@Override
 	public void doPost(HttpServletRequest request, HttpServletResponse response){
-		System.out.println("\n 1st ===> setup Mail Server Properties..");
+		System.out.println("\n 1st setup Mail Server Properties..");
 		Properties mailServerProperties = System.getProperties();
 		mailServerProperties.put("mail.smtp.port", "587");
 		mailServerProperties.put("mail.smtp.auth", "true");

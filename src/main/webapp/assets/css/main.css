@@ -1646,10 +1646,7 @@
 		font-style: italic;
 		padding: 1em 0 1em 2em;
 	}
-<<<<<<< HEAD
-=======
 
->>>>>>> dba982578fe3bda038628f0ca3c2e9c29f6f7b1e
 /* Section/Article */
 
 	section.special, article.special {
@@ -3219,4 +3216,16 @@
 				height: 34px;
 			}
 
+	}
+
+	input.text-box{
+		min-height: 100px;
+		display: block;
+		word-wrap: break-word;
+		minlegth: 50;
+		width: 100%;
+	}
+	input.submit{
+		width: 100%;
+		margin-top: 1em;
 	}
