@@ -2625,7 +2625,12 @@
 		/* Banner */
 
 			#banner {
-				background-attachment: scroll;
+				background-image: url("../../images/background.jpg");
+				background-attachment: scroll, scroll, scroll, fixed;
+				background-color: #645862;
+				background-position: bottom left, bottom right, top left, top center;
+				background-repeat: no-repeat, no-repeat, repeat, no-repeat;
+				background-size: cover;
 			}
 
 		/* CTA */
@@ -2700,7 +2705,12 @@
 		/* Banner */
 
 			#banner {
-				background-size: 15em, 15em, auto, cover;
+				background-image: url("../../images/background.jpg");
+				background-attachment: scroll, scroll, scroll, fixed;
+				background-color: #645862;
+				background-position: bottom left, bottom right, top left, top center;
+				background-repeat: no-repeat, no-repeat, repeat, no-repeat;
+				background-size: cover;
 			}
 
 		/* Main */
@@ -2802,6 +2812,12 @@
 
 			#banner {
 				margin: 0;
+				background-image: url("../../images/background.jpg");
+				background-attachment: scroll, scroll, scroll, fixed;
+				background-color: #645862;
+				background-position: bottom left, bottom right, top left, top center;
+				background-repeat: no-repeat, no-repeat, repeat, no-repeat;
+				background-size: cover;
 			}
 
 		/* Wrapper */
@@ -3142,7 +3158,8 @@
 		/* Banner */
 
 			#banner {
-				background-size: 10em, 10em, auto, cover;
+				background-image: url("../../images/background.jpg");
+				background-size: cover, 10em, 10em, auto;
 				padding: 6em 0;
 			}
 
