@@ -217,6 +217,11 @@
 
 /* Grid */
 
+	#logonutrif {
+		float: right;
+		margin-top: 41.5px;
+	}
+
 	.row {
 		border-bottom: solid 1px transparent;
 		-moz-box-sizing: border-box;
@@ -263,11 +268,11 @@
 	}
 
 	.row > * {
-		padding: 50px 0 0 50px;
+		padding: 50px 50px 0px 50px;
 	}
 
 	.row {
-		margin: -50px 0 -1px -50px;
+		margin: -50px -50px -50px -50px;
 	}
 
 	.row.uniform > * {
@@ -393,7 +398,8 @@
 	.\34 u, .\34 u\24 {
 		width: 33.3333333333%;
 		clear: none;
-		margin-left: 0;
+		margin-left: 82.5px;
+		margin-right: 82.5px;
 	}
 
 	.\33 u, .\33 u\24 {
@@ -2533,6 +2539,7 @@
 		color: #7c8081;
 		padding: 2em 5em 2em 5em;
 		text-align: center;
+		margin-bottom: -140px;
 	}
 
 		#footer .copyright {
