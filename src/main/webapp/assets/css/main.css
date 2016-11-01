@@ -2539,12 +2539,13 @@
 		color: #7c8081;
 		padding: 2em 5em 2em 5em;
 		text-align: center;
-		margin-bottom: -140px;
+		margin-bottom: -141px;
 	}
 
 		#footer .copyright {
 			font-size: 0.8em;
 			line-height: 1em;
+			clear: both;
 		}
 
 			#footer .copyright a {
