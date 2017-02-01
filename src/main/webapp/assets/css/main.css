@@ -219,6 +219,7 @@
 	
 	#logoifopendoors {
 		padding-right: 40px;
+		margin-left: -25px;
 	}
 
 	#logoqmanager {
@@ -226,7 +227,6 @@
 	}
 
 	#logonutrif {
-		float: right;
 		margin-top: 41.5px;
 	}
 
